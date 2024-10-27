@@ -47,7 +47,7 @@ if user_input:
 # Add a select box for choosing a theme
 theme = st.selectbox("Choose a theme:", ["Light", "Dark", "Colorful"])
 
-st.write(f"You selected the {theme} theme.")
+st.write(f"You selected the {theme} theme")
 
 # Add a slider for rating
 rating = st.slider("Rate your experience (1-10)", 1, 10)
