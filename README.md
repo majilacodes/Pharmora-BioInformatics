@@ -1,4 +1,4 @@
-# Pharmora - Advanced Bioinformatics Research Platform
+# Pharmora - AI Driven Bioinformatics Research Platform
 
 Welcome to **Pharmora**, an all-in-one bioinformatics research platform designed to accelerate drug discovery and molecular research. Pharmora provides a comprehensive set of tools for researchers and scientists working in the fields of cheminformatics, bioinformatics, and pharmaceutical research.
 
@@ -66,37 +66,6 @@ Pharmora integrates **seven specialized models** to assist with various aspects 
    
    - *Use Case:* Early-stage filtering of chemical libraries to focus on drug-like molecules.
 
-## Intel® Extension for Scikit-learn
-
-In this project, we utilized the **Intel® Extension for Scikit-learn** to enhance the performance of machine learning models. This extension optimizes scikit-learn for Intel® architectures, allowing us to speed up the training and inference of our models without changing the codebase.
-
-### Why Intel® Extension for Scikit-learn?
-
-- **Performance Boost:** The extension allows us to achieve higher computational efficiency, particularly for large datasets or complex models. We experienced faster training and inference times, enabling quicker iterations during the drug discovery process.
-  
-- **Seamless Integration:** The extension integrates smoothly into the existing scikit-learn ecosystem, allowing us to leverage its optimizations with minimal code modifications.
-
-### How We Used Intel’s scikit-learn
-
-We applied Intel® Extension for Scikit-learn in several models, including our **Bioactivity Predictor** and **Molecular Descriptor Calculator**, to accelerate computations involving large molecular datasets.
-
-Here’s an example of how we patched scikit-learn in our code:
-
-python
-import numpy as np
-import dpctl
-from sklearnex import patch_sklearn, config_context
-patch_sklearn()
-
-# Example of using patched scikit-learn models
-from sklearn.ensemble import RandomForestRegressor
-
-# Using Intel-optimized RandomForestRegressor
-model = RandomForestRegressor()
-model.fit(X_train, y_train)
-predictions = model.predict(X_test)
-
-
 ## Installation
 
 To use Pharmora on your local machine, follow the steps below to install the required dependencies and run the platform.
@@ -151,19 +120,9 @@ To predict the pIC50 value of a molecule, follow these steps:
 3. Click on **Predict** to get the pIC50 value for the compound.
 4. View the result in the results section.
 
-## Contributing
-
-We are constantly improving Pharmora and welcome contributions from the community. Whether it's fixing bugs, adding new features, or improving documentation, your help is appreciated!
-
-### How to Contribute:
-
-1. Fork the repository on GitHub.
-2. Create a new branch for your feature or fix.
-3. Submit a pull request with a detailed explanation of your changes.
-
 ## Acknowledgments
 
-Pharmora was inspired by the need for advanced, user-friendly bioinformatics tools that streamline drug discovery and molecular research. We thank the open-source community and bioinformatics researchers for their contributions to this field.
+Pharmora was inspired by the need for advanced, user-friendly bioinformatics tools that streamline drug discovery and molecular research. 
 
 ---
 
