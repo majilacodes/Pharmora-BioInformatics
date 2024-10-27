@@ -66,6 +66,7 @@ Pharmora integrates **seven specialized models** to assist with various aspects 
    
    - *Use Case:* Early-stage filtering of chemical libraries to focus on drug-like molecules.
 
+
 ## Installation
 
 To use Pharmora on your local machine, follow the steps below to install the required dependencies and run the platform.
